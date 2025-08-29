@@ -16,10 +16,14 @@ overlay.style.cssText = `
 
 const svgImage = document.createElement('img');
 svgImage.id = 'svgImage';
+// ⚡ Ajout d’un paramètre anti-cache pour relancer l’anim à chaque refresh
 svgImage.src = 'https://cdn.jsdelivr.net/gh/okid-app/preloader/preload.svg?v=' + Date.now();
+
+// ⚡ Style responsive (corrigé pour mobile)
 svgImage.style.cssText = `
-    max-width: 100%;
-    max-height: 100%;
+    width: 80vw;       /* prend 80% de la largeur de l’écran */
+    max-width: 400px;  /* limite max sur desktop */
+    height: auto;      /* conserve les proportions */
     display: none;
     position: absolute;
     top: 50%;
@@ -40,8 +44,6 @@ function hideOverlay() {
 
 // Add an event listener to hide the overlay when all external JS files are loaded
 document.addEventListener('DOMContentLoaded', () => {
-    // Replace the following lines with the actual code that loads your external JS files
-    // For demonstration purposes, we'll use a setTimeout to simulate loading external JS files.
     setTimeout(hideOverlay, 100); // Replace with your actual loading code.
 });
 
