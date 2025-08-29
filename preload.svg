@@ -1,0 +1,31 @@
+<svg width="300" height="150" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .okid {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      letter-spacing: -0.5;
+    }
+    .dot {
+      font-family: 'Times New Roman', serif;
+      font-weight: 800;
+    }
+  </style>
+
+  <!-- Groupe logo centré -->
+  <g text-anchor="middle">
+    <!-- OKID -->
+    <text id="okid" x="150" y="50" class="okid" font-size="21" fill="#000000">OKID</text>
+    <!-- Point violet -->
+    <text id="dot" x="180" y="50" class="dot" font-size="30" fill="#722BFF">.</text>
+  </g>
+
+  <!-- Barre de fond gris -->
+  <rect x="60" y="70" rx="4" ry="4" width="180" height="8" fill="#F2F1F3"/>
+
+  <!-- Barre violette animée -->
+  <rect x="60" y="70" rx="4" ry="4" width="0" height="8" fill="#722BFF">
+    <animate attributeName="width" from="0" to="180" dur="3s" repeatCount="1"
+             begin="0s" fill="freeze"
+             keySplines="0.42 0 0.58 1" calcMode="spline"/>
+  </rect>
+</svg>
