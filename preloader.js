@@ -24,6 +24,7 @@ svgImage.src = 'https://cdn.jsdelivr.net/gh/okid-app/preloader/preload.svg?v=' +
 svgImage.style.cssText = `
     width: 80vw;       /* prend 80% de la largeur de l’écran */
     max-width: 400px;  /* limite max sur desktop */
+	min-width: 152px;
     height: auto;      /* conserve les proportions */
     display: none;
     position: absolute;
