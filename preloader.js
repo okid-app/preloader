@@ -1,4 +1,5 @@
-// Create the overlay and SVG elements
+// Create the overlay and SVG elements 
+// v2
 const overlay = document.createElement('div');
 overlay.id = 'loader';
 overlay.style.cssText = `
